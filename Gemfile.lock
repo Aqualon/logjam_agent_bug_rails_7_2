@@ -100,6 +100,20 @@ GEM
       reline (>= 0.3.8)
     drb (2.2.1)
     erubi (1.13.0)
+    ffi (1.17.0-aarch64-linux-gnu)
+    ffi (1.17.0-aarch64-linux-musl)
+    ffi (1.17.0-arm-linux-gnu)
+    ffi (1.17.0-arm-linux-musl)
+    ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x86-linux-gnu)
+    ffi (1.17.0-x86-linux-musl)
+    ffi (1.17.0-x86_64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
+    ffi (1.17.0-x86_64-linux-musl)
+    ffi-rzmq (2.0.7)
+      ffi-rzmq-core (>= 1.0.7)
+    ffi-rzmq-core (1.0.7)
+      ffi
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.6)
@@ -118,6 +132,11 @@ GEM
     json (2.7.2)
     language_server-protocol (3.17.0.3)
     logger (1.6.1)
+    logjam_agent (0.39.0)
+      activesupport
+      ffi-rzmq (>= 2.0.4)
+      ffi-rzmq-core (>= 1.0.5)
+      time_bandits (>= 0.12.2)
     loofah (2.22.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.12.0)
@@ -131,6 +150,7 @@ GEM
     mini_mime (1.1.5)
     minitest (5.25.1)
     msgpack (1.7.2)
+    mutex_m (0.2.0)
     net-imap (0.4.16)
       date
       net-protocol
@@ -266,6 +286,12 @@ GEM
       railties (>= 6.0.0)
     stringio (3.1.1)
     thor (1.3.2)
+    thread_variables (0.2.0)
+    time_bandits (0.15.0)
+      activesupport (>= 5.2.0)
+      base64
+      mutex_m
+      thread_variables
     timeout (0.4.1)
     turbo-rails (2.0.10)
       actionpack (>= 6.0.0)
@@ -311,6 +337,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  logjam_agent
   puma (>= 5.0)
   rails (~> 7.2.1)
   rubocop-rails-omakase
