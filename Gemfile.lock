@@ -132,7 +132,7 @@ GEM
     json (2.7.2)
     language_server-protocol (3.17.0.3)
     logger (1.6.1)
-    logjam_agent (0.39.0)
+    logjam_agent (0.39.1)
       activesupport
       ffi-rzmq (>= 2.0.4)
       ffi-rzmq-core (>= 1.0.5)
